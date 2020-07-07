@@ -26,7 +26,7 @@ def deleteTask(desc, iscompl):
 def modifyTask(descold, iscomplold, desc, iscompl):
     return useDB.updateEntry(descold, iscomplold, desc, iscompl)
 
-app.install(CorsPlugin(origins=['http://localhost:8080']))
+app.install(CorsPlugin(origins=['*']))
 
 
 if __name__ == "__main__":
